@@ -8,4 +8,4 @@ def homepage(request):
 
 def types(request):
     types = Cancer.objects.all()
-    return render(request,'type.html',{'types':types})
+    return render(request,'types.html',{'types':types})
