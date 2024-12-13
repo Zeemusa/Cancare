@@ -11202,3 +11202,11 @@ body {
 .footer {
   padding: 5rem 0;
 }
+
+.py-5{
+  background-color: #000;
+}
+
+.container_disease{
+  padding-left: 25rem;
+}

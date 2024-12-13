@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content%}
+
+<div class=" container_disease" >
+<br/>
+
+<div class="mx-auto p-2" style="width: 1000px;">
+    <div class="row g-0">
+        <div class="col-md-6">
+        <div class="card-body">
+            <center id="disease">
+            <h5 class="card-title"><b>{{ cancer.type_of_cancer}}</b></h5>
+            <h5> <ul>Description</ul></h5>
+            <p class="card-text">{{ cancer.description}}</p>
+            <h5> <u>Symptoms</u></h5>
+            <p class="card-text">{{cancer.symptoms}}</p>
+            <h5> <u>Treatment</u></h5>
+            <p class="card-text">{{cancer.treatment}}</p>
+            <br/>
+            <a href="{% url 'types'%}" class="btn btn-secondary">Back</a>
+            </center>
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+{% endblock %}
