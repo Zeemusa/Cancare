@@ -2,16 +2,18 @@
 {% load static %}
 {% block content%}
 
-<div class=" container_disease" >
+<div class=" container_disease bg-dark" >
 <br/>
 
-<div class="mx-auto p-2" style="width: 1000px;">
+<div class="mx-auto p-2 text-white" style="width: 1000px;">
     <div class="row g-0">
         <div class="col-md-6">
         <div class="card-body">
             <center id="disease">
+                <br/><br/><br/>
             <h5 class="card-title"><b>{{ cancer.type_of_cancer}}</b></h5>
-            <h5> <ul>Description</ul></h5>
+            <br/>
+            <h5> <u>Description</u></h5>
             <p class="card-text">{{ cancer.description}}</p>
             <h5> <u>Symptoms</u></h5>
             <p class="card-text">{{cancer.symptoms}}</p>
@@ -25,8 +27,60 @@
     </div>
     </div>
 </div>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
 
+<section class="signup-section" id="signup">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-10 col-lg-8 mx-auto text-center">
+                <p class="text-white text-lg-right"><b>For further inquiries, please reach out to our doctor or visit our hospital for more personalized sessions.</b></p>
+                
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section bg-black">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5">
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Dr. LOdeyo</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">Agha-khan Hospital.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-envelope text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Email</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50"><a href="#!">Haitimua678@gmail.com</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3 mb-md-0">
+                <div class="card py-4 h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                        <h4 class="text-uppercase m-0">Phone</h4>
+                        <hr class="my-4 mx-auto" />
+                        <div class="small text-black-50">+254 710257647</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="social d-flex justify-content-center">
+            <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+            <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+            <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</section>
 
 {% endblock %}
